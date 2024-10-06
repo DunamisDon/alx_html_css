@@ -1,0 +1,190 @@
+/* Container to center content */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Links hover effect */
+a:hover, a:active {
+    color: var(--primary-color);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 480px) {
+    .icons-section, .result-pentagons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, black 0%, black 100%),
+                radial-gradient(circle, rgba(41, 48, 60, 0) 0%, #071629 100%);
+    opacity: 0.7;
+}
+
+/* Hero Content */
+.hero-content {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    max-width: 700px;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 120px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.btn-cta {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #FF6565;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 22px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s;
+}
+
+.btn-cta:hover {
+    background-color: #FF3B3B;
+}
+
+/* Hero Header (Logo and Navigation) */
+.hero-header {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    z-index: 3;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+}
+
+.hero-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.hero-nav a {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.hero-nav a:hover {
+    color: #FF6565;
+}
+
+/* What We Do Section */
+.what-we-do {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.what-we-do h2 {
+    font-size: 32px;
+    color: var(--secondary-color);
+}
+
+.what-we-do p {
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+
+/* Icons Section */
+.icons-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.icon {
+    text-align: center;
+    margin: 20px;
+}
+
+.icon h3 {
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+
+.icon p {
+    font-size: 14px;
+    color: var(--secondary-color);
+}
